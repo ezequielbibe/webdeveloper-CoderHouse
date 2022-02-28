@@ -1,0 +1,741 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 10px 0px;
+    border-bottom: 2px solid rgb(119, 10, 161);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-family: 'Rowdies', cursive;
+}
+.logo {
+    max-width: 70px;
+}
+
+.header-lista {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+.header-lista li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.header-lista li a:hover {
+    color: rgb(119, 10, 161);
+}
+
+.main-content {
+    height: 1500px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 420px 200px 420px;
+    grid-template-areas: "a1 a2" 
+                         "a3 a3" 
+                         "a4 a5";
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+p {
+    font-size: 19px;
+}
+.box-parrafo {
+    grid-area: a1;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+.box-parrafo h2 {
+    font-size: 50px;
+}
+.text-marcado {
+    color: rgb(119, 10, 161);
+}
+
+.box-img {
+    grid-area: a2;
+}
+.img-ajuste {
+    width: 100%;
+}
+.img-ajuste2 {
+    height: 100%;
+    width: 100%;
+}
+
+.aclaracion {
+    grid-area: a3;
+}
+.aclaracion h3 {
+    font-size: 30px;
+}
+
+.video1 {
+    grid-area: a4;
+}
+.video2 {
+    grid-area: a5;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0px;
+    border-top: 2px solid rgb(119, 10, 161);
+}
+.footer a {
+    text-decoration: none;
+    margin-left: 15px;
+}
+.instagram {
+    font-size: 30px;
+    color: rgb(119, 10, 161);
+}
+.twitter {
+    font-size: 30px;
+    color: rgb(23, 85, 219);
+}
+.facebook {
+    font-size: 30px;
+    color: rgb(0, 0, 207);
+}
+.box-video {
+    height: 100%;
+    width: 100%;
+    box-shadow: rgb(119, 10, 161) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.img-shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 100%;
+    width: 100%;
+}
+
+/* ------------------9z--------------------*/
+/* ------------------9z--------------------*/
+/* ------------------9z--------------------*/
+
+.main-content-9z {
+    display: grid;
+    height: 3600px;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 100px 400px 50px 400px 300px 400px 400px 400px 400px 200px;
+    grid-template-areas: "titulo titulo" 
+                         "a1 a2"
+                         "espacio espacio"
+                         "banner banner" 
+                         "titulo2 titulo2"
+                         "a3 a4"
+                         "a5 a6"
+                         "a7 a7"
+                         "a8 a9"
+                         "a10 a10";
+    justify-content: space-evenly;
+    align-content: space-around;
+    justify-items: center;
+    align-items: center;
+}
+.titulo1-9z {
+    grid-area: titulo;
+    font-size: 50px;
+    color: rgb(119, 10, 161);
+}
+.box-descripcion-9z {
+    grid-area: a1;
+}
+.box-frank {
+    grid-area: a2;
+    height: 100%;
+    width: 100%;
+}
+.box-banner-9z {
+    grid-area: banner;
+}
+.titulo2-9z {
+    grid-area: titulo2;
+    font-size: 50px;
+}
+.foto1-9z {
+    grid-area: a3;
+    width: 100%;
+    height: 100%;
+}
+.p1-9z {
+    grid-area: a4;
+}
+.p2-9z{
+    grid-area: a5;
+}
+.video1-9z {
+    grid-area: a6;
+}
+.p3-9z {
+    grid-area: a7;
+}
+.video2-9z {
+    grid-area: a8;
+}
+.p4-9z {
+    grid-area: a9;
+}
+.p5-9z {
+    grid-area: a10;
+}
+
+/* ------------------KRU--------------------*/
+/* ------------------KRU--------------------*/
+/* ------------------KRU--------------------*/
+
+.main-content-kru {
+    display: grid;
+    height: 5600px;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 100px 400px 50px 400px 300px 400px 300px 400px 200px 600px 400px 200px 400px 500px 500px;
+    grid-template-areas: "titulo titulo"
+                         "a1 a2"
+                         "espacio espacio"
+                         "banner banner"
+                         "titulo2 titulo2"
+                         "a3 a4"
+                         "a5 a5"
+                         "a6 a7"
+                         "a8 a8"
+                         "a9 a9"
+                         "a10 a11"
+                         "a12 a12"
+                         "a13 a14"
+                         "a15 a15"
+                         "a16 a16";
+    justify-content: space-evenly;
+    align-content: space-around;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.titulo1-kru {
+    grid-area: titulo;
+    font-size: 50px;
+    color: rgb(119, 10, 161);
+}
+.p1-kru {
+    grid-area: a1;
+}
+.foto1-kru {
+    grid-area: a2;
+    width: 100%;
+    height: 100%;
+}
+.banner-kru {
+    grid-area: banner;
+}
+.titulo2-kru {
+    grid-area: titulo2;
+    font-size: 50px;
+}
+.p2-kru {
+    grid-area: a3;
+}
+.video1-kru {
+    grid-area: a4;
+}
+.p3-kru {
+    grid-area: a5;
+}
+.video2-kru {
+    grid-area: a6;
+}
+.p4-kru {
+    grid-area: a7;
+}
+.p5-kru {
+    grid-area: a8;
+}
+.foto2-kru {
+    grid-area: a9;
+}
+.p6-kru {
+    grid-area: a10;
+}
+.video3-kru {
+    grid-area: a11;
+}
+.p7-kru {
+    grid-area: a12;
+}
+.video4-kru {
+    grid-area: a13;
+}
+.p8-kru {
+    grid-area: a14;
+}
+.p9-kru {
+    grid-area: a15;
+}
+.foto3-kru {
+    grid-area: a16;
+    width: 100%;
+    height: 100%;
+}
+
+/* ------------------GALERIA--------------------*/
+/* ------------------GALERIA--------------------*/
+/* ------------------GALERIA--------------------*/
+
+.main-content-galeria {
+    display: grid;
+    height: 5800px;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 200px 200px 400px 500px 400px 400px 200px 400px 500px 500px 400px 500px 400px 400px;
+    grid-template-areas: 
+                         "galeria galeria galeria"
+                         "tituloG tituloG tituloG"
+                         "a1 a2 a3"
+                         "a4 a4 a5"
+                         "a6 a7 a8"
+                         "a9 a10 a11"
+                         "tituloG2 tituloG2 tituloG2"
+                         "a12 a13 a14"
+                         "a15 a15 a16"
+                         "a17 a18 a18"
+                         "a19 a20 a21"
+                         "a22 a22 a23"
+                         "a24 a25 a26"
+                         "a27 a28 a29";
+    justify-content: space-evenly;
+    align-content: space-around;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.galeria {
+    grid-area: galeria;
+    font-size: 50px;
+    color: rgb(119, 10, 161);
+    width: 100%;
+    text-align: center;
+}
+.tituloG {
+    grid-area: tituloG;
+    font-size: 50px;
+    color: white;
+    background-color: rgb(119, 10, 161);
+    width: 100%;
+    text-align: center;
+}
+.tituloG2 {
+    grid-area: tituloG2;
+    font-size: 50px;
+    color: white;
+    background-color: rgb(119, 10, 161);
+    width: 100%;
+    text-align: center;
+}
+.box1-9z {
+    grid-area: a1;
+}
+.box2-9z {
+    grid-area: a2;
+}
+.box3-9z {
+    grid-area: a3;
+}
+.box4-9z {
+    grid-area: a4;
+}
+.box5-9z {
+    grid-area: a5;
+}
+.box6-9z {
+    grid-area: a6;
+}
+.box7-9z {
+    grid-area: a7;
+}
+.box8-9z {
+    grid-area: a8;
+}
+.box9-9z {
+    grid-area: a9;
+}
+.box10-9z {
+    grid-area: a10;
+}
+.box11-9z {
+    grid-area: a11;
+}
+.box1-kru {
+    grid-area: a12 ;
+}
+.box2-kru {
+    grid-area: a13;
+}
+.box3-kru {
+    grid-area: a14;
+}
+.box4-kru {
+    grid-area: a15;
+}
+.box5-kru {
+    grid-area: a16;
+}
+.box6-kru {
+    grid-area: a17;
+}
+.box7-kru {
+    grid-area: a18;
+}
+.box8-kru {
+    grid-area: a19;
+}
+.box9-kru {
+    grid-area: a20;
+}
+.box10-kru {
+    grid-area: a21;
+}
+.box11-kru {
+    grid-area: a22;
+}
+.box12-kru {
+    grid-area: a23;
+}
+.box13-kru {
+    grid-area: a24;
+}
+.box14-kru {
+    grid-area: a25;
+}
+.box15-kru {
+    grid-area: a26;
+}
+.box16-kru {
+    grid-area: a27;
+}
+.box17-kru {
+    grid-area: a28;
+}
+.box18-kru {
+    grid-area: a29;
+}
+
+
+/*-----------------CONTACTO------------------- */
+/*-----------------CONTACTO------------------- */
+/*-----------------CONTACTO------------------- */
+
+
+.main-content-contact {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 200px 700px;
+    grid-template-areas: "titulo titulo"
+                         "a1 a2";
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.titulo-contact {
+    grid-area: titulo;
+    font-size: 50px;
+    color: rgb(119, 10, 161);
+}
+.box1-contact {
+    grid-area: a1;
+}
+.box2-contact {
+    width: 100%;
+    height: 100%;
+    grid-area: a2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+    border-top: 2px solid rgb(119, 10, 161);
+    border-bottom: 2px solid rgb(119, 10, 161);
+}
+.box-form {
+    width: 70%;
+}
+.box2-contact input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: rgb(119, 10, 161);
+    color: white;
+}
+.box2-contact textarea {
+    width: 100%;
+    height: 120px;
+    background-color: rgb(119, 10, 161);
+    color: white;
+}
+
+
+
+/*-----------------RESPONSIVE----------------- */
+/*-----------------RESPONSIVE----------------- */
+/*-----------------RESPONSIVE----------------- */
+
+@media screen and (max-width: 767px) {
+
+    /* HOME */
+    .header {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .main-content {
+        height: 2100px;
+        grid-template-columns: 90%;
+        grid-template-rows: 400px 420px 300px 400px 400px;
+        grid-template-areas: "a1" 
+                             "a2"
+                             "a3" 
+                             "a4" 
+                             "a5";
+    }
+    .footer {
+        flex-direction: column;
+        padding: 30px 10px;
+        margin-top: 20px;
+    }
+
+    /* 9z Team */
+
+    .main-content-9z {
+        height: 5500px;
+        grid-template-columns: 90%;
+        grid-template-rows: 100px 400px 450px 400px 200px 400px 450px 400px 400px 750px 400px 500px 250px;
+        grid-template-areas: "titulo" 
+                             "a2" 
+                             "a1"
+                             "banner" 
+                             "titulo2"
+                             "a3" 
+                             "a4"
+                             "a5"
+                             "a6"
+                             "a7"
+                             "a8"
+                             "a9"
+                             "a10";
+    }
+
+    /* KRU Esports */
+
+    .main-content-kru {
+        height: 8000px;
+        grid-template-columns: 90%;
+        grid-template-rows: 100px 400px 400px 50px 400px 200px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 200px 1100px 400px;
+        grid-template-areas: "titulo"
+                             "a1"
+                             "a2"
+                             "espacio"
+                             "banner"
+                             "titulo2"
+                             "a3"
+                             "a4"
+                             "a5"
+                             "a6"
+                             "a7"
+                             "a8"
+                             "a9"
+                             "a10"
+                             "a11"
+                             "a12"
+                             "a13"
+                             "a14"
+                             "a15"
+                             "a16";
+    }
+
+    /* GALERIA */
+
+    .main-content-galeria {
+        height: 12500px;
+        grid-template-columns: 90%;
+        grid-template-rows: 200px 200px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 200px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px;
+        grid-template-areas: 
+                             "galeria"
+                             "tituloG"
+                             "a1"
+                             "a2"
+                             "a3"
+                             "a4"
+                             "a5"
+                             "a6"
+                             "a7"
+                             "a8"
+                             "a9"
+                             "a10"
+                             "a11"
+                             "tituloG2"
+                             "a12"
+                             "a13"
+                             "a14"
+                             "a15"
+                             "a16"
+                             "a17"
+                             "a18"
+                             "a19"
+                             "a20"
+                             "a21"
+                             "a22"
+                             "a23"
+                             "a24"
+                             "a25"
+                             "a26"
+                             "a27"
+                             "a28"
+                             "a29";
+    }
+
+    /* Contacto */ 
+
+    .main-content-contact {
+
+        grid-template-columns: 100%;
+        grid-template-rows: 150px 500px;
+        grid-template-areas: "titulo"
+                             "a2";
+    }
+    .box1-contact {
+        display: none;
+    }
+}
+
+@media screen and ( min-width: 768px) and ( max-width: 1199px) {
+
+    /* HOME */
+    .main-content {
+        height: 2000px;
+        grid-template-columns: 90%;
+        grid-template-rows: 350px 420px 300px 400px 400px;
+        grid-template-areas: "a1"
+                             "a2" 
+                             "a3" 
+                             "a4" 
+                             "a5";
+    }
+    .footer {
+        flex-direction: column;
+        padding: 30px 10px;
+        margin-top: 20px;
+    }
+
+    /* 9z Team */
+
+    .main-content-9z {
+        height: 5400px;
+        grid-template-columns: 90%;
+        grid-template-rows: 100px 600px 400px 400px 200px 600px 400px 400px 300px 500px 400px 400px 200px;
+        grid-template-areas: "titulo" 
+                             "a2" 
+                             "a1"
+                             "banner" 
+                             "titulo2"
+                             "a3" 
+                             "a4"
+                             "a6"
+                             "a5"
+                             "a7"
+                             "a8"
+                             "a9"
+                             "a10";
+    }
+
+    /* KRU ESPORTS */
+
+    .main-content-kru {
+        height: 7400px;
+        grid-template-columns: 90%;
+        grid-template-rows: 200px 400px 400px 50px 400px 400px 200px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 200px 800px 400px;
+        grid-template-areas: "titulo"
+                             "a1"
+                             "a2"
+                             "espacio"
+                             "banner"
+                             "titulo2"
+                             "a3"
+                             "a4"
+                             "a5"
+                             "a6"
+                             "a7"
+                             "a8"
+                             "a9"
+                             "a10"
+                             "a11"
+                             "a12"
+                             "a13"
+                             "a14"
+                             "a15"
+                             "a16";
+    }
+
+    /* Galeria */
+
+    .main-content-galeria {
+        height: 7900px;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 200px 200px 400px 400px 400px 400px 400px 400px 200px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px;
+        grid-template-areas:
+                             "galeria galeria"
+                             "tituloG tituloG"
+                             "a1 a2"
+                             "a3 a4"
+                             "a5 a5"
+                             "a6 a7"
+                             "a8 a9"
+                             "a10 a11"
+                             "tituloG2 tituloG2"
+                             "a12 a13"
+                             "a14 a15"
+                             "a16 a16"
+                             "a17 a18"
+                             "a19 a19"
+                             "a20 a21"
+                             "a22 a23"
+                             "a24 a24"
+                             "a25 a26"
+                             "a27 a27"
+                             "a28 a29";
+    }
+
+    /* Contacto */
+
+    .main-content-contact {
+        height: 1200px;
+        grid-template-columns: 100%;
+        grid-template-rows: 150px 500px 500px;
+        grid-template-areas: "titulo"
+                             "a2"
+                             "a1";
+        align-content: space-around;
+        margin-bottom: 0px;
+    }
+    
+}
