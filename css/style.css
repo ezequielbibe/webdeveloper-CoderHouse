@@ -159,8 +159,6 @@ p {
 }
 .img-shadow {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    height: 100%;
-    width: 100%;
 }
 
 /* ------------------9z--------------------*/
@@ -197,8 +195,6 @@ p {
 }
 .box-frank {
     grid-area: a2;
-    height: 100%;
-    width: 100%;
 }
 .box-banner-9z {
     grid-area: banner;
@@ -210,8 +206,6 @@ p {
 }
 .foto1-9z {
     grid-area: a3;
-    width: 100%;
-    height: 100%;
 }
 .p1-9z {
     grid-area: a4;
@@ -328,8 +322,6 @@ p {
 }
 .foto3-kru {
     grid-area: a16;
-    width: 100%;
-    height: 100%;
 }
 
 /* ------------------GALERIA--------------------*/
