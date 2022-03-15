@@ -1,0 +1,35 @@
+$colorPrincipal: rgb(119, 10, 161);
+$colorBody1: rgb(32, 32, 44);
+$colorBody2: rgb(49, 51, 59);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $colorBody1
+}
+p {
+    font-size: 19px;
+    color: rgb(172, 172, 172);
+}
+.text-marcado {
+    color: $colorPrincipal;
+}
+.img-ajuste {
+    width: 100%;
+}
+.img-ajuste2 {
+    height: 100%;
+    width: 100%;
+}
+.box-video {
+    height: 100%;
+    width: 100%;
+    box-shadow: $colorPrincipal 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.img-shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

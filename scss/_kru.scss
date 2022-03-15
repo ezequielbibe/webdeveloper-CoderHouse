@@ -1,0 +1,90 @@
+.main-content-kru {
+    display: grid;
+    height: 5600px;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 100px 400px 50px 400px 300px 400px 300px 400px 200px 600px 400px 200px 400px 500px 500px;
+    grid-template-areas: "titulo titulo"
+                         "a1 a2"
+                         "espacio espacio"
+                         "banner banner"
+                         "titulo2 titulo2"
+                         "a3 a4"
+                         "a5 a5"
+                         "a6 a7"
+                         "a8 a8"
+                         "a9 a9"
+                         "a10 a11"
+                         "a12 a12"
+                         "a13 a14"
+                         "a15 a15"
+                         "a16 a16";
+    justify-content: space-evenly;
+    align-content: space-around;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 100px;
+
+    .titulo1-kru {
+        grid-area: titulo;
+        font-size: 50px;
+        color: $colorPrincipal;
+    }
+    .p1-kru {
+        grid-area: a1;
+    }
+    .foto1-kru {
+        grid-area: a2;
+        width: 100%;
+        height: 100%;
+    }
+    .banner-kru {
+        grid-area: banner;
+    }
+    .titulo2-kru {
+        grid-area: titulo2;
+        font-size: 50px;
+        color: white;
+    }
+    .p2-kru {
+        grid-area: a3;
+    }
+    .video1-kru {
+        grid-area: a4;
+    }
+    .p3-kru {
+        grid-area: a5;
+    }
+    .video2-kru {
+        grid-area: a6;
+    }
+    .p4-kru {
+        grid-area: a7;
+    }
+    .p5-kru {
+        grid-area: a8;
+    }
+    .foto2-kru {
+        grid-area: a9;
+    }
+    .p6-kru {
+        grid-area: a10;
+    }
+    .video3-kru {
+        grid-area: a11;
+    }
+    .p7-kru {
+        grid-area: a12;
+    }
+    .video4-kru {
+        grid-area: a13;
+    }
+    .p8-kru {
+        grid-area: a14;
+    }
+    .p9-kru {
+        grid-area: a15;
+    }
+    .foto3-kru {
+        grid-area: a16;
+    }
+}

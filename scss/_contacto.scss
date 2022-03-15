@@ -1,0 +1,40 @@
+.main-content-contact {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 200px 700px;
+    grid-template-areas: "titulo titulo"
+                         "a1 a2";
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 100px;
+
+    .titulo-contact {
+        grid-area: titulo;
+        font-size: 50px;
+        color: $colorPrincipal;
+    }
+    .box1-contact {
+        grid-area: a1;
+    }
+    .box-form {
+        grid-area: a2;
+        width: 70%;
+    
+        & h3 {
+            color: white;
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        textarea {
+            width: 100%;
+            height: 120px;
+            margin-bottom: 10px;
+        }
+        .botonsin:hover {
+            background-color: $colorPrincipal;
+        }    
+    }
+}

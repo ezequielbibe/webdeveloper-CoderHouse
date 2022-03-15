@@ -1,0 +1,64 @@
+.main-content-9z {
+    display: grid;
+    height: 3600px;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 100px 400px 50px 400px 300px 400px 400px 400px 400px 200px;
+    grid-template-areas: "titulo titulo" 
+                         "a1 a2"
+                         "espacio espacio"
+                         "banner banner" 
+                         "titulo2 titulo2"
+                         "a3 a4"
+                         "a5 a6"
+                         "a7 a7"
+                         "a8 a9"
+                         "a10 a10";
+    justify-content: space-evenly;
+    align-content: space-around;
+    justify-items: center;
+    align-items: center;
+
+    .titulo1-9z {
+        grid-area: titulo;
+        font-size: 50px;
+        color: $colorPrincipal;
+    }
+    .box-descripcion-9z {
+        grid-area: a1;
+    }
+    .box-frank {
+        grid-area: a2;
+    }
+    .box-banner-9z {
+        grid-area: banner;
+    }
+    .titulo2-9z {
+        grid-area: titulo2;
+        font-size: 50px;
+        color: white;
+    }
+    .foto1-9z {
+        grid-area: a3;
+    }
+    .p1-9z {
+        grid-area: a4;
+    }
+    .p2-9z{
+        grid-area: a5;
+    }
+    .video1-9z {
+        grid-area: a6;
+    }
+    .p3-9z {
+        grid-area: a7;
+    }
+    .video2-9z {
+        grid-area: a8;
+    }
+    .p4-9z {
+        grid-area: a9;
+    }
+    .p5-9z {
+        grid-area: a10;
+    }
+}
