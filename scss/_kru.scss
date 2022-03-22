@@ -25,9 +25,8 @@
     margin-bottom: 100px;
 
     .titulo1-kru {
+        @include titulos($colorPrincipal, 50px);
         grid-area: titulo;
-        font-size: 50px;
-        color: $colorPrincipal;
     }
     .p1-kru {
         grid-area: a1;
@@ -41,9 +40,8 @@
         grid-area: banner;
     }
     .titulo2-kru {
+        @include titulos(white, 50px);
         grid-area: titulo2;
-        font-size: 50px;
-        color: white;
     }
     .p2-kru {
         grid-area: a3;

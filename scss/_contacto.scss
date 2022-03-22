@@ -9,9 +9,8 @@
     margin-bottom: 100px;
 
     .titulo-contact {
+        @include titulos($colorPrincipal, 50px);
         grid-area: titulo;
-        font-size: 50px;
-        color: $colorPrincipal;
     }
     .box1-contact {
         grid-area: a1;

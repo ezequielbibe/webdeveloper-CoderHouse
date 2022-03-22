@@ -15,16 +15,13 @@ p {
 .text-marcado {
   color: #770aa1; }
 
-.img-ajuste {
+.img-ajuste, .img-ajuste2, .box-video {
   width: 100%; }
 
-.img-ajuste2 {
-  height: 100%;
-  width: 100%; }
+.img-ajuste2, .box-video {
+  height: 100%; }
 
 .box-video {
-  height: 100%;
-  width: 100%;
   box-shadow: #770aa1 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; }
 
 .img-shadow {
@@ -42,11 +39,11 @@ p {
   top: 0;
   background-color: #31333b; }
   .header-logo {
+    color: white;
+    font-size: 10px;
     display: flex;
     align-items: center;
-    font-size: 10px;
-    font-family: 'Rowdies', cursive;
-    color: white; }
+    font-family: 'Rowdies', cursive; }
     .header-logo h1 {
       display: block;
       font-size: 2em;
@@ -56,9 +53,9 @@ p {
       margin-inline-end: 0px;
       font-weight: bold; }
     .header-logo .bi-controller {
+      color: #f1f1f1;
       font-size: 35px;
-      margin-right: 10px;
-      color: #f1f1f1; }
+      margin-right: 10px; }
   .header .header-lista {
     list-style-type: none;
     display: flex;
@@ -75,7 +72,7 @@ p {
   display: grid;
   grid-template-columns: 45% 45%;
   grid-template-rows: 420px 200px 420px;
-  grid-template-areas: "a1 a2"  "a3 a3"  "a4 a5";
+  grid-template-areas: "a1 a2"  "a3 a3"  "a4 a5";
   justify-content: space-evenly;
   align-content: space-around; }
   .main-content .box-parrafo {
@@ -93,8 +90,8 @@ p {
   .main-content .aclaracion {
     grid-area: a3; }
     .main-content .aclaracion h3 {
-      font-size: 30px;
-      color: white; }
+      color: white;
+      font-size: 30px; }
   .main-content .video1 {
     grid-area: a4; }
   .main-content .video2 {
@@ -119,8 +116,8 @@ p {
     text-decoration: none;
     margin-left: 15px; }
   .footer .bi {
-    font-size: 30px;
-    color: gray; }
+    color: gray;
+    font-size: 30px; }
     .footer .bi:hover {
       color: #770aa1; }
 
@@ -129,15 +126,15 @@ p {
   height: 3600px;
   grid-template-columns: 45% 45%;
   grid-template-rows: 100px 400px 50px 400px 300px 400px 400px 400px 400px 200px;
-  grid-template-areas: "titulo titulo"  "a1 a2" "espacio espacio" "banner banner"  "titulo2 titulo2" "a3 a4" "a5 a6" "a7 a7" "a8 a9" "a10 a10";
+  grid-template-areas: "titulo titulo"  "a1 a2" "espacio espacio" "banner banner"  "titulo2 titulo2" "a3 a4" "a5 a6" "a7 a7" "a8 a9" "a10 a10";
   justify-content: space-evenly;
   align-content: space-around;
   justify-items: center;
   align-items: center; }
   .main-content-9z .titulo1-9z {
-    grid-area: titulo;
+    color: #770aa1;
     font-size: 50px;
-    color: #770aa1; }
+    grid-area: titulo; }
   .main-content-9z .box-descripcion-9z {
     grid-area: a1; }
   .main-content-9z .box-frank {
@@ -170,16 +167,16 @@ p {
   height: 5600px;
   grid-template-columns: 45% 45%;
   grid-template-rows: 100px 400px 50px 400px 300px 400px 300px 400px 200px 600px 400px 200px 400px 500px 500px;
-  grid-template-areas: "titulo titulo" "a1 a2" "espacio espacio" "banner banner" "titulo2 titulo2" "a3 a4" "a5 a5" "a6 a7" "a8 a8" "a9 a9" "a10 a11" "a12 a12" "a13 a14" "a15 a15" "a16 a16";
+  grid-template-areas: "titulo titulo" "a1 a2" "espacio espacio" "banner banner" "titulo2 titulo2" "a3 a4" "a5 a5" "a6 a7" "a8 a8" "a9 a9" "a10 a11" "a12 a12" "a13 a14" "a15 a15" "a16 a16";
   justify-content: space-evenly;
   align-content: space-around;
   justify-items: center;
   align-items: center;
   margin-bottom: 100px; }
   .main-content-kru .titulo1-kru {
-    grid-area: titulo;
+    color: #770aa1;
     font-size: 50px;
-    color: #770aa1; }
+    grid-area: titulo; }
   .main-content-kru .p1-kru {
     grid-area: a1; }
   .main-content-kru .foto1-kru {
@@ -189,9 +186,9 @@ p {
   .main-content-kru .banner-kru {
     grid-area: banner; }
   .main-content-kru .titulo2-kru {
-    grid-area: titulo2;
+    color: white;
     font-size: 50px;
-    color: white; }
+    grid-area: titulo2; }
   .main-content-kru .p2-kru {
     grid-area: a3; }
   .main-content-kru .video1-kru {
@@ -226,7 +223,7 @@ p {
   height: 5800px;
   grid-template-columns: 30% 30% 30%;
   grid-template-rows: 200px 200px 400px 500px 400px 400px 200px 400px 500px 500px 400px 500px 400px 400px;
-  grid-template-areas: "galeria galeria galeria" "tituloG tituloG tituloG" "a1 a2 a3" "a4 a4 a5" "a6 a7 a8" "a9 a10 a11" "tituloG2 tituloG2 tituloG2" "a12 a13 a14" "a15 a15 a16" "a17 a18 a18" "a19 a20 a21" "a22 a22 a23" "a24 a25 a26" "a27 a28 a29";
+  grid-template-areas: "galeria galeria galeria" "tituloG tituloG tituloG" "a1 a2 a3" "a4 a4 a5" "a6 a7 a8" "a9 a10 a11" "tituloG2 tituloG2 tituloG2" "a12 a13 a14" "a15 a15 a16" "a17 a18 a18" "a19 a20 a21" "a22 a22 a23" "a24 a25 a26" "a27 a28 a29";
   justify-content: space-evenly;
   align-content: space-around;
   justify-items: center;
@@ -238,20 +235,15 @@ p {
     color: #770aa1;
     width: 100%;
     text-align: center; }
-  .main-content-galeria .tituloG {
-    grid-area: tituloG;
-    font-size: 50px;
+  .main-content-galeria .tituloG, .main-content-galeria .tituloG2 {
     color: white;
+    font-size: 50px;
+    grid-area: tituloG;
     background-color: #770aa1;
     width: 100%;
     text-align: center; }
   .main-content-galeria .tituloG2 {
-    grid-area: tituloG2;
-    font-size: 50px;
-    color: white;
-    background-color: #770aa1;
-    width: 100%;
-    text-align: center; }
+    grid-area: tituloG2; }
   .main-content-galeria .box1-9z {
     grid-area: a1; }
   .main-content-galeria .box2-9z {
@@ -315,14 +307,14 @@ p {
   display: grid;
   grid-template-columns: 65% 35%;
   grid-template-rows: 200px 700px;
-  grid-template-areas: "titulo titulo" "a1 a2";
+  grid-template-areas: "titulo titulo" "a1 a2";
   justify-items: center;
   align-items: center;
   margin-bottom: 100px; }
   .main-content-contact .titulo-contact {
-    grid-area: titulo;
+    color: #770aa1;
     font-size: 50px;
-    color: #770aa1; }
+    grid-area: titulo; }
   .main-content-contact .box1-contact {
     grid-area: a1; }
   .main-content-contact .box-form {
@@ -356,7 +348,7 @@ p {
     height: 2100px;
     grid-template-columns: 90%;
     grid-template-rows: 400px 420px 300px 400px 400px;
-    grid-template-areas: "a1"  "a2" "a3"  "a4"  "a5"; }
+    grid-template-areas: "a1"  "a2" "a3"  "a4"  "a5"; }
   .footer {
     flex-direction: column;
     padding: 30px 10px;
@@ -366,24 +358,24 @@ p {
     height: 5500px;
     grid-template-columns: 90%;
     grid-template-rows: 100px 400px 450px 400px 200px 400px 450px 400px 400px 750px 400px 500px 250px;
-    grid-template-areas: "titulo"  "a2"  "a1" "banner"  "titulo2" "a3"  "a4" "a5" "a6" "a7" "a8" "a9" "a10"; }
+    grid-template-areas: "titulo"  "a2"  "a1" "banner"  "titulo2" "a3"  "a4" "a5" "a6" "a7" "a8" "a9" "a10"; }
   /* KRU Esports */
   .main-content-kru {
     height: 8000px;
     grid-template-columns: 90%;
     grid-template-rows: 100px 400px 400px 50px 400px 200px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 200px 1100px 400px;
-    grid-template-areas: "titulo" "a1" "a2" "espacio" "banner" "titulo2" "a3" "a4" "a5" "a6" "a7" "a8" "a9" "a10" "a11" "a12" "a13" "a14" "a15" "a16"; }
+    grid-template-areas: "titulo" "a1" "a2" "espacio" "banner" "titulo2" "a3" "a4" "a5" "a6" "a7" "a8" "a9" "a10" "a11" "a12" "a13" "a14" "a15" "a16"; }
   /* GALERIA */
   .main-content-galeria {
     height: 12500px;
     grid-template-columns: 90%;
     grid-template-rows: 200px 200px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 200px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px;
-    grid-template-areas: "galeria" "tituloG" "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9" "a10" "a11" "tituloG2" "a12" "a13" "a14" "a15" "a16" "a17" "a18" "a19" "a20" "a21" "a22" "a23" "a24" "a25" "a26" "a27" "a28" "a29"; }
+    grid-template-areas: "galeria" "tituloG" "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9" "a10" "a11" "tituloG2" "a12" "a13" "a14" "a15" "a16" "a17" "a18" "a19" "a20" "a21" "a22" "a23" "a24" "a25" "a26" "a27" "a28" "a29"; }
   /* Contacto */
   .main-content-contact {
     grid-template-columns: 100%;
     grid-template-rows: 150px 500px;
-    grid-template-areas: "titulo" "a2"; }
+    grid-template-areas: "titulo" "a2"; }
     .main-content-contact .box1-contact {
       display: none; } }
 
@@ -393,7 +385,7 @@ p {
     height: 2000px;
     grid-template-columns: 90%;
     grid-template-rows: 350px 420px 300px 400px 400px;
-    grid-template-areas: "a1" "a2"  "a3"  "a4"  "a5"; }
+    grid-template-areas: "a1" "a2"  "a3"  "a4"  "a5"; }
   .footer {
     flex-direction: column;
     padding: 30px 10px;
@@ -403,24 +395,24 @@ p {
     height: 5400px;
     grid-template-columns: 90%;
     grid-template-rows: 100px 600px 400px 400px 200px 600px 400px 400px 300px 500px 400px 400px 200px;
-    grid-template-areas: "titulo"  "a2"  "a1" "banner"  "titulo2" "a3"  "a4" "a6" "a5" "a7" "a8" "a9" "a10"; }
+    grid-template-areas: "titulo"  "a2"  "a1" "banner"  "titulo2" "a3"  "a4" "a6" "a5" "a7" "a8" "a9" "a10"; }
   /* KRU ESPORTS */
   .main-content-kru {
     height: 7400px;
     grid-template-columns: 90%;
     grid-template-rows: 200px 400px 400px 50px 400px 400px 200px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 200px 800px 400px;
-    grid-template-areas: "titulo" "a1" "a2" "espacio" "banner" "titulo2" "a3" "a4" "a5" "a6" "a7" "a8" "a9" "a10" "a11" "a12" "a13" "a14" "a15" "a16"; }
+    grid-template-areas: "titulo" "a1" "a2" "espacio" "banner" "titulo2" "a3" "a4" "a5" "a6" "a7" "a8" "a9" "a10" "a11" "a12" "a13" "a14" "a15" "a16"; }
   /* Galeria */
   .main-content-galeria {
     height: 7900px;
     grid-template-columns: 45% 45%;
     grid-template-rows: 200px 200px 400px 400px 400px 400px 400px 400px 200px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px;
-    grid-template-areas: "galeria galeria" "tituloG tituloG" "a1 a2" "a3 a4" "a5 a5" "a6 a7" "a8 a9" "a10 a11" "tituloG2 tituloG2" "a12 a13" "a14 a15" "a16 a16" "a17 a18" "a19 a19" "a20 a21" "a22 a23" "a24 a24" "a25 a26" "a27 a27" "a28 a29"; }
+    grid-template-areas: "galeria galeria" "tituloG tituloG" "a1 a2" "a3 a4" "a5 a5" "a6 a7" "a8 a9" "a10 a11" "tituloG2 tituloG2" "a12 a13" "a14 a15" "a16 a16" "a17 a18" "a19 a19" "a20 a21" "a22 a23" "a24 a24" "a25 a26" "a27 a27" "a28 a29"; }
   /* Contacto */
   .main-content-contact {
     height: 1200px;
     grid-template-columns: 100%;
     grid-template-rows: 150px 500px 500px;
-    grid-template-areas: "titulo" "a2" "a1";
+    grid-template-areas: "titulo" "a2" "a1";
     align-content: space-around;
     margin-bottom: 0px; } }

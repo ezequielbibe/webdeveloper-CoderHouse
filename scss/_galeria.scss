@@ -32,20 +32,15 @@
         text-align: center;
     }
     .tituloG {
+        @include titulos(white, 50px);
         grid-area: tituloG;
-        font-size: 50px;
-        color: white;
         background-color: $colorPrincipal;
         width: 100%;
         text-align: center;
     }
     .tituloG2 {
+        @extend .tituloG;
         grid-area: tituloG2;
-        font-size: 50px;
-        color: white;
-        background-color: $colorPrincipal;
-        width: 100%;
-        text-align: center;
     }
     .box1-9z {
         grid-area: a1;
