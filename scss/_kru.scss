@@ -1,8 +1,8 @@
 .main-content-kru {
     display: grid;
-    height: 5600px;
+    height: 5000px;
     grid-template-columns: 45% 45%;
-    grid-template-rows: 100px 400px 50px 400px 300px 400px 300px 400px 200px 600px 400px 200px 400px 500px 500px;
+    grid-template-rows: 150px 420px 50px 400px 150px 400px 230px 400px 200px 600px 400px 200px 400px 250px 420px 120px;
     grid-template-areas: "titulo titulo"
                          "a1 a2"
                          "espacio espacio"
@@ -17,15 +17,15 @@
                          "a12 a12"
                          "a13 a14"
                          "a15 a15"
-                         "a16 a16";
+                         "a16 a17"
+                         "a18 a18";
     justify-content: space-evenly;
     align-content: space-around;
     justify-items: center;
     align-items: center;
-    margin-bottom: 100px;
 
     .titulo1-kru {
-        @include titulos($colorPrincipal, 50px);
+        @include titulos($colorPrincipal, 100px, 1);
         grid-area: titulo;
     }
     .p1-kru {
@@ -40,7 +40,8 @@
         grid-area: banner;
     }
     .titulo2-kru {
-        @include titulos(white, 50px);
+        @include titulos(white, 40px, 0);
+        padding: 0% 10%;
         grid-area: titulo2;
     }
     .p2-kru {
@@ -82,7 +83,13 @@
     .p9-kru {
         grid-area: a15;
     }
-    .foto3-kru {
+    .p10-kru {
         grid-area: a16;
+    }
+    .foto3-kru {
+        grid-area: a17;
+    }
+    .p11-kru {
+        grid-area: a18;
     }
 }

@@ -13,18 +13,22 @@ p {
   color: #acacac; }
 
 .text-marcado {
-  color: #770aa1; }
+  color: #770aa1;
+  font-weight: bold; }
 
-.img-ajuste, .img-ajuste2, .box-video {
+.img-ajuste, .img-ajuste2, .box-video, .img-shadow2 {
   width: 100%; }
 
-.img-ajuste2, .box-video {
+.img-ajuste2, .box-video, .img-shadow2 {
   height: 100%; }
 
 .box-video {
   box-shadow: #770aa1 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; }
 
 .img-shadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+
+.img-shadow2 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
 
 .header {
@@ -37,10 +41,12 @@ p {
   border-bottom: 2px solid #770aa1;
   position: sticky;
   top: 0;
-  background-color: #31333b; }
+  background-color: #31333b;
+  z-index: 150000; }
   .header-logo {
     color: white;
     font-size: 10px;
+    font-family: 'Rowdies', cursive;
     display: flex;
     align-items: center;
     font-family: 'Rowdies', cursive; }
@@ -55,6 +61,7 @@ p {
     .header-logo .bi-controller {
       color: #f1f1f1;
       font-size: 35px;
+      font-family: 'Rowdies', cursive;
       margin-right: 10px; }
   .header .header-lista {
     list-style-type: none;
@@ -68,13 +75,15 @@ p {
         color: #fcf6ff; }
 
 .main-content {
-  height: 1500px;
+  height: 1200px;
   display: grid;
   grid-template-columns: 45% 45%;
-  grid-template-rows: 420px 200px 420px;
+  grid-template-rows: 500px 200px 400px;
   grid-template-areas: "a1 a2"  "a3 a3"  "a4 a5";
   justify-content: space-evenly;
-  align-content: space-around; }
+  align-content: space-around;
+  justify-items: center;
+  align-items: center; }
   .main-content .box-parrafo {
     grid-area: a1;
     display: flex;
@@ -84,14 +93,17 @@ p {
     gap: 30px; }
     .main-content .box-parrafo h2 {
       color: white;
-      font-size: 50px; }
+      font-size: 50px;
+      font-family: 'Rowdies', cursive; }
   .main-content .box-img {
     grid-area: a2; }
   .main-content .aclaracion {
-    grid-area: a3; }
+    grid-area: a3;
+    padding: 0% 10%; }
     .main-content .aclaracion h3 {
       color: white;
-      font-size: 30px; }
+      font-size: 30px;
+      font-family: 'Rowdies', cursive; }
   .main-content .video1 {
     grid-area: a4; }
   .main-content .video2 {
@@ -117,15 +129,16 @@ p {
     margin-left: 15px; }
   .footer .bi {
     color: gray;
-    font-size: 30px; }
+    font-size: 30px;
+    font-family: 'Rowdies', cursive; }
     .footer .bi:hover {
       color: #770aa1; }
 
 .main-content-9z {
   display: grid;
-  height: 3600px;
+  height: 3200px;
   grid-template-columns: 45% 45%;
-  grid-template-rows: 100px 400px 50px 400px 300px 400px 400px 400px 400px 200px;
+  grid-template-rows: 100px 400px 50px 400px 100px 500px 400px 400px 500px 150px;
   grid-template-areas: "titulo titulo"  "a1 a2" "espacio espacio" "banner banner"  "titulo2 titulo2" "a3 a4" "a5 a6" "a7 a7" "a8 a9" "a10 a10";
   justify-content: space-evenly;
   align-content: space-around;
@@ -133,7 +146,9 @@ p {
   align-items: center; }
   .main-content-9z .titulo1-9z {
     color: #770aa1;
-    font-size: 50px;
+    font-size: 100px;
+    font-family: 'Rowdies', cursive;
+    text-shadow: 2px 2px 2px #acacac;
     grid-area: titulo; }
   .main-content-9z .box-descripcion-9z {
     grid-area: a1; }
@@ -143,8 +158,9 @@ p {
     grid-area: banner; }
   .main-content-9z .titulo2-9z {
     grid-area: titulo2;
+    color: white;
     font-size: 50px;
-    color: white; }
+    font-family: 'Rowdies', cursive; }
   .main-content-9z .foto1-9z {
     grid-area: a3; }
   .main-content-9z .p1-9z {
@@ -164,18 +180,19 @@ p {
 
 .main-content-kru {
   display: grid;
-  height: 5600px;
+  height: 5000px;
   grid-template-columns: 45% 45%;
-  grid-template-rows: 100px 400px 50px 400px 300px 400px 300px 400px 200px 600px 400px 200px 400px 500px 500px;
-  grid-template-areas: "titulo titulo" "a1 a2" "espacio espacio" "banner banner" "titulo2 titulo2" "a3 a4" "a5 a5" "a6 a7" "a8 a8" "a9 a9" "a10 a11" "a12 a12" "a13 a14" "a15 a15" "a16 a16";
+  grid-template-rows: 150px 420px 50px 400px 150px 400px 230px 400px 200px 600px 400px 200px 400px 250px 420px 120px;
+  grid-template-areas: "titulo titulo" "a1 a2" "espacio espacio" "banner banner" "titulo2 titulo2" "a3 a4" "a5 a5" "a6 a7" "a8 a8" "a9 a9" "a10 a11" "a12 a12" "a13 a14" "a15 a15" "a16 a17" "a18 a18";
   justify-content: space-evenly;
   align-content: space-around;
   justify-items: center;
-  align-items: center;
-  margin-bottom: 100px; }
+  align-items: center; }
   .main-content-kru .titulo1-kru {
     color: #770aa1;
-    font-size: 50px;
+    font-size: 100px;
+    font-family: 'Rowdies', cursive;
+    text-shadow: 2px 2px 2px #acacac;
     grid-area: titulo; }
   .main-content-kru .p1-kru {
     grid-area: a1; }
@@ -187,7 +204,9 @@ p {
     grid-area: banner; }
   .main-content-kru .titulo2-kru {
     color: white;
-    font-size: 50px;
+    font-size: 40px;
+    font-family: 'Rowdies', cursive;
+    padding: 0% 10%;
     grid-area: titulo2; }
   .main-content-kru .p2-kru {
     grid-area: a3; }
@@ -215,29 +234,39 @@ p {
     grid-area: a14; }
   .main-content-kru .p9-kru {
     grid-area: a15; }
-  .main-content-kru .foto3-kru {
+  .main-content-kru .p10-kru {
     grid-area: a16; }
+  .main-content-kru .foto3-kru {
+    grid-area: a17; }
+  .main-content-kru .p11-kru {
+    grid-area: a18; }
 
 .main-content-galeria {
   display: grid;
-  height: 5800px;
+  height: 4500px;
   grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 200px 200px 400px 500px 400px 400px 200px 400px 500px 500px 400px 500px 400px 400px;
+  grid-template-rows: 200px 100px 300px 400px 300px 300px 100px 300px 400px 400px 300px 300px 300px 300px;
   grid-template-areas: "galeria galeria galeria" "tituloG tituloG tituloG" "a1 a2 a3" "a4 a4 a5" "a6 a7 a8" "a9 a10 a11" "tituloG2 tituloG2 tituloG2" "a12 a13 a14" "a15 a15 a16" "a17 a18 a18" "a19 a20 a21" "a22 a22 a23" "a24 a25 a26" "a27 a28 a29";
   justify-content: space-evenly;
   align-content: space-around;
   justify-items: center;
-  align-items: center;
-  margin-bottom: 100px; }
+  align-items: center; }
+  .main-content-galeria img:hover {
+    transform: scale(1.15);
+    transition: all 2s; }
   .main-content-galeria .galeria {
     grid-area: galeria;
-    font-size: 50px;
-    color: #770aa1;
-    width: 100%;
     text-align: center; }
+    .main-content-galeria .galeria h2 {
+      color: #770aa1;
+      font-size: 100px;
+      font-family: 'Rowdies', cursive;
+      text-shadow: 2px 2px 2px #acacac; }
   .main-content-galeria .tituloG, .main-content-galeria .tituloG2 {
     color: white;
     font-size: 50px;
+    font-family: 'Rowdies', cursive;
+    text-shadow: 2px 2px 2px #acacac;
     grid-area: tituloG;
     background-color: #770aa1;
     width: 100%;
@@ -305,16 +334,19 @@ p {
 
 .main-content-contact {
   display: grid;
+  height: 700px;
   grid-template-columns: 65% 35%;
-  grid-template-rows: 200px 700px;
+  grid-template-rows: 150px 500px;
   grid-template-areas: "titulo titulo" "a1 a2";
   justify-items: center;
-  align-items: center;
-  margin-bottom: 100px; }
+  align-items: center; }
   .main-content-contact .titulo-contact {
-    color: #770aa1;
-    font-size: 50px;
     grid-area: titulo; }
+    .main-content-contact .titulo-contact h2 {
+      color: #770aa1;
+      font-size: 100px;
+      font-family: 'Rowdies', cursive;
+      text-shadow: 2px 2px 2px #acacac; }
   .main-content-contact .box1-contact {
     grid-area: a1; }
   .main-content-contact .box-form {
@@ -333,7 +365,7 @@ p {
     .main-content-contact .box-form .botonsin:hover {
       background-color: #770aa1; }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 450px) {
   /* HOME */
   .header {
     flex-direction: column;
@@ -345,74 +377,185 @@ p {
   .boton {
     margin-bottom: 10px; }
   .main-content {
-    height: 2100px;
+    height: 2800px;
     grid-template-columns: 90%;
-    grid-template-rows: 400px 420px 300px 400px 400px;
-    grid-template-areas: "a1"  "a2" "a3"  "a4"  "a5"; }
+    grid-template-rows: 900px 230px 750px 400px 400px;
+    grid-template-areas: "a1"  "a2" "a3"  "a4"  "a5"; }
   .footer {
     flex-direction: column;
     padding: 30px 10px;
     margin-top: 20px; }
   /* 9z Team */
   .main-content-9z {
-    height: 5500px;
+    height: 7500px;
     grid-template-columns: 90%;
-    grid-template-rows: 100px 400px 450px 400px 200px 400px 450px 400px 400px 750px 400px 500px 250px;
-    grid-template-areas: "titulo"  "a2"  "a1" "banner"  "titulo2" "a3"  "a4" "a5" "a6" "a7" "a8" "a9" "a10"; }
+    grid-template-rows: 200px 300px 800px 200px 220px 250px 900px 670px 400px 1450px 400px 950px 450px;
+    grid-template-areas: "titulo"  "a2"  "a1" "banner"  "titulo2" "a3"  "a4" "a5" "a6" "a7" "a8" "a9" "a10"; }
   /* KRU Esports */
   .main-content-kru {
-    height: 8000px;
+    height: 10500px;
     grid-template-columns: 90%;
-    grid-template-rows: 100px 400px 400px 50px 400px 200px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 200px 1100px 400px;
-    grid-template-areas: "titulo" "a1" "a2" "espacio" "banner" "titulo2" "a3" "a4" "a5" "a6" "a7" "a8" "a9" "a10" "a11" "a12" "a13" "a14" "a15" "a16"; }
+    grid-template-rows: 250px 750px 200px 50px 200px 450px 400px 400px 760px 400px 650px 550px 200px 700px 400px 650px 400px 350px 850px 800px 200px 450px;
+    grid-template-areas: "titulo" "a1" "a2" "espacio" "banner" "titulo2" "a3" "a4" "a5" "a6" "a7" "a8" "a9" "a10" "a11" "a12" "a13" "a14" "a15" "a16" "a17" "a18"; }
   /* GALERIA */
   .main-content-galeria {
-    height: 12500px;
+    height: 7500px;
     grid-template-columns: 90%;
-    grid-template-rows: 200px 200px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 200px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px;
-    grid-template-areas: "galeria" "tituloG" "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9" "a10" "a11" "tituloG2" "a12" "a13" "a14" "a15" "a16" "a17" "a18" "a19" "a20" "a21" "a22" "a23" "a24" "a25" "a26" "a27" "a28" "a29"; }
+    grid-template-rows: 220px 80px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 80px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+    grid-template-areas: "galeria" "tituloG" "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9" "a10" "a11" "tituloG2" "a12" "a13" "a14" "a15" "a16" "a17" "a18" "a19" "a20" "a21" "a22" "a23" "a24" "a25" "a26" "a27" "a28" "a29"; }
+    .main-content-galeria img:hover {
+      transform: none;
+      transition: none; }
+    .main-content-galeria .galeria h2 {
+      font-size: 70px; }
   /* Contacto */
   .main-content-contact {
     grid-template-columns: 100%;
     grid-template-rows: 150px 500px;
-    grid-template-areas: "titulo" "a2"; }
+    grid-template-areas: "titulo" "a2"; }
+    .main-content-contact .box1-contact {
+      display: none; }
+    .main-content-contact .titulo-contact h2 {
+      font-size: 70px; } }
+
+@media screen and (min-width: 451px) and (max-width: 576px) {
+  /* HOME */
+  .header {
+    flex-direction: column;
+    align-items: center; }
+  .header-nav {
+    width: 100%;
+    text-align: center; }
+  .boton {
+    margin-bottom: 10px; }
+  .main-content {
+    height: 2400px;
+    grid-template-columns: 90%;
+    grid-template-rows: 650px 300px 580px 400px 400px;
+    grid-template-areas: "a1"  "a2" "a3"  "a4"  "a5"; }
+  .footer {
+    flex-direction: column;
+    padding: 30px 10px;
+    margin-top: 20px; }
+  /* 9z Team */
+  .main-content-9z {
+    height: 6000px;
+    grid-template-columns: 90%;
+    grid-template-rows: 200px 300px 600px 200px 180px 350px 650px 480px 400px 1050px 400px 680px 300px;
+    grid-template-areas: "titulo"  "a2"  "a1" "banner"  "titulo2" "a3"  "a4" "a5" "a6" "a7" "a8" "a9" "a10"; }
+  /* KRU Esports */
+  .main-content-kru {
+    height: 8500px;
+    grid-template-columns: 90%;
+    grid-template-rows: 250px 550px 200px 0px 200px 250px 300px 400px 550px 400px 500px 400px 290px 520px 400px 500px 400px 280px 630px 600px 290px 330px;
+    grid-template-areas: "titulo" "a1" "a2" "espacio" "banner" "titulo2" "a3" "a4" "a5" "a6" "a7" "a8" "a9" "a10" "a11" "a12" "a13" "a14" "a15" "a16" "a17" "a18"; }
+  /* GALERIA */
+  .main-content-galeria {
+    height: 7500px;
+    grid-template-columns: 90%;
+    grid-template-rows: 200px 80px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 80px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+    grid-template-areas: "galeria" "tituloG" "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9" "a10" "a11" "tituloG2" "a12" "a13" "a14" "a15" "a16" "a17" "a18" "a19" "a20" "a21" "a22" "a23" "a24" "a25" "a26" "a27" "a28" "a29"; }
+    .main-content-galeria img:hover {
+      transform: none;
+      transition: none; }
+    .main-content-galeria .galeria h2 {
+      font-size: 70px; }
+  /* Contacto */
+  .main-content-contact {
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 500px;
+    grid-template-areas: "titulo" "a2"; }
+    .main-content-contact .box1-contact {
+      display: none; }
+    .main-content-contact .titulo-contact h2 {
+      font-size: 70px; } }
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  /* HOME */
+  .header {
+    flex-direction: column;
+    align-items: center; }
+  .header-nav {
+    width: 100%;
+    text-align: center; }
+  .boton {
+    margin-bottom: 10px; }
+  .main-content {
+    height: 2300px;
+    grid-template-columns: 90%;
+    grid-template-rows: 550px 390px 500px 400px 400px;
+    grid-template-areas: "a1"  "a2" "a3"  "a4"  "a5"; }
+  .footer {
+    flex-direction: column;
+    padding: 30px 10px;
+    margin-top: 20px; }
+  /* 9z Team */
+  .main-content-9z {
+    height: 5300px;
+    grid-template-columns: 90%;
+    grid-template-rows: 100px 460px 450px 250px 100px 430px 500px 370px 400px 820px 400px 520px 250px;
+    grid-template-areas: "titulo"  "a2"  "a1" "banner"  "titulo2" "a3"  "a4" "a5" "a6" "a7" "a8" "a9" "a10"; }
+  /* KRU Esports */
+  .main-content-kru {
+    height: 7700px;
+    grid-template-columns: 90%;
+    grid-template-rows: 250px 420px 300px 20px 300px 230px 240px 400px 430px 400px 370px 330px 400px 400px 400px 370px 400px 200px 520px 460px 400px 250px;
+    grid-template-areas: "titulo" "a1" "a2" "espacio" "banner" "titulo2" "a3" "a4" "a5" "a6" "a7" "a8" "a9" "a10" "a11" "a12" "a13" "a14" "a15" "a16" "a17" "a18"; }
+  /* GALERIA */
+  .main-content-galeria {
+    height: 9500px;
+    grid-template-columns: 90%;
+    grid-template-rows: 170px 80px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 80px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+    grid-template-areas: "galeria" "tituloG" "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9" "a10" "a11" "tituloG2" "a12" "a13" "a14" "a15" "a16" "a17" "a18" "a19" "a20" "a21" "a22" "a23" "a24" "a25" "a26" "a27" "a28" "a29"; }
+    .main-content-galeria img:hover {
+      transform: none;
+      transition: none; }
+  /* Contacto */
+  .main-content-contact {
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 500px;
+    grid-template-areas: "titulo" "a2"; }
     .main-content-contact .box1-contact {
       display: none; } }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   /* HOME */
   .main-content {
-    height: 2000px;
+    height: 2100px;
     grid-template-columns: 90%;
-    grid-template-rows: 350px 420px 300px 400px 400px;
-    grid-template-areas: "a1" "a2"  "a3"  "a4"  "a5"; }
+    grid-template-rows: 400px 420px 350px 400px 400px;
+    grid-template-areas: "a1" "a2"  "a3"  "a4"  "a5"; }
   .footer {
     flex-direction: column;
     padding: 30px 10px;
-    margin-top: 20px; }
+    margin-top: 10px; }
   /* 9z Team */
   .main-content-9z {
-    height: 5400px;
+    height: 5100px;
     grid-template-columns: 90%;
-    grid-template-rows: 100px 600px 400px 400px 200px 600px 400px 400px 300px 500px 400px 400px 200px;
-    grid-template-areas: "titulo"  "a2"  "a1" "banner"  "titulo2" "a3"  "a4" "a6" "a5" "a7" "a8" "a9" "a10"; }
+    grid-template-rows: 100px 520px 380px 400px 120px 700px 350px 400px 290px 630px 400px 390px 190px;
+    grid-template-areas: "titulo"  "a2"  "a1" "banner"  "titulo2" "a3"  "a4" "a6" "a5" "a7" "a8" "a9" "a10"; }
   /* KRU ESPORTS */
   .main-content-kru {
-    height: 7400px;
+    height: 7100px;
     grid-template-columns: 90%;
-    grid-template-rows: 200px 400px 400px 50px 400px 400px 200px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 200px 800px 400px;
-    grid-template-areas: "titulo" "a1" "a2" "espacio" "banner" "titulo2" "a3" "a4" "a5" "a6" "a7" "a8" "a9" "a10" "a11" "a12" "a13" "a14" "a15" "a16"; }
+    grid-template-rows: 150px 360px 400px 0px 300px 150px 200px 400px 320px 400px 320px 240px 490px 320px 400px 320px 400px 200px 380px 380px 490px 190px;
+    grid-template-areas: "titulo" "a1" "a2" "espacio" "banner" "titulo2" "a3" "a4" "a5" "a6" "a7" "a8" "a9" "a10" "a11" "a12" "a13" "a14" "a15" "a16" "a17" "a18"; }
   /* Galeria */
   .main-content-galeria {
-    height: 7900px;
+    height: 6500px;
     grid-template-columns: 45% 45%;
-    grid-template-rows: 200px 200px 400px 400px 400px 400px 400px 400px 200px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px;
-    grid-template-areas: "galeria galeria" "tituloG tituloG" "a1 a2" "a3 a4" "a5 a5" "a6 a7" "a8 a9" "a10 a11" "tituloG2 tituloG2" "a12 a13" "a14 a15" "a16 a16" "a17 a18" "a19 a19" "a20 a21" "a22 a23" "a24 a24" "a25 a26" "a27 a27" "a28 a29"; }
+    grid-template-rows: 200px 80px 400px 400px 400px 200px 200px 200px 80px 400px 400px 400px 400px 400px 400px 400px 400px 200px 400px 200px;
+    grid-template-areas: "galeria galeria" "tituloG tituloG" "a1 a2" "a3 a4" "a5 a5" "a6 a7" "a8 a9" "a10 a11" "tituloG2 tituloG2" "a12 a13" "a14 a15" "a16 a16" "a17 a18" "a19 a19" "a20 a21" "a22 a23" "a24 a24" "a25 a26" "a27 a27" "a28 a29"; }
+    .main-content-galeria img:hover {
+      transform: none;
+      transition: none; }
   /* Contacto */
   .main-content-contact {
-    height: 1200px;
+    height: 700px;
     grid-template-columns: 100%;
-    grid-template-rows: 150px 500px 500px;
-    grid-template-areas: "titulo" "a2" "a1";
-    align-content: space-around;
-    margin-bottom: 0px; } }
+    grid-template-rows: 150px 500px;
+    grid-template-areas: "titulo" "a2";
+    align-content: space-around; }
+    .main-content-contact .box1-contact {
+      display: none; } }

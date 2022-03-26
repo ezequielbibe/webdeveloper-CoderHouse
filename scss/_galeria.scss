@@ -1,8 +1,8 @@
 .main-content-galeria {
     display: grid;
-    height: 5800px;
+    height: 4500px;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 200px 200px 400px 500px 400px 400px 200px 400px 500px 500px 400px 500px 400px 400px;
+    grid-template-rows: 200px 100px 300px 400px 300px 300px 100px 300px 400px 400px 300px 300px 300px 300px;
     grid-template-areas: 
                          "galeria galeria galeria"
                          "tituloG tituloG tituloG"
@@ -22,17 +22,21 @@
     align-content: space-around;
     justify-items: center;
     align-items: center;
-    margin-bottom: 100px;
+    
+    img:hover {
+        transform: scale(1.15);
+        transition: all 2s;
+    }
 
     .galeria {
         grid-area: galeria;
-        font-size: 50px;
-        color: $colorPrincipal;
-        width: 100%;
         text-align: center;
+        h2 {
+            @include titulos($colorPrincipal, 100px, 1);
+        }
     }
     .tituloG {
-        @include titulos(white, 50px);
+        @include titulos(white, 50px, 1);
         grid-area: tituloG;
         background-color: $colorPrincipal;
         width: 100%;

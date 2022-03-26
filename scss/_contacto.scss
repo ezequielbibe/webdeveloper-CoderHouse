@@ -1,16 +1,19 @@
 .main-content-contact {
     display: grid;
+    height: 700px;
     grid-template-columns: 65% 35%;
-    grid-template-rows: 200px 700px;
+    grid-template-rows: 150px 500px;
     grid-template-areas: "titulo titulo"
                          "a1 a2";
     justify-items: center;
     align-items: center;
-    margin-bottom: 100px;
 
     .titulo-contact {
-        @include titulos($colorPrincipal, 50px);
         grid-area: titulo;
+        
+        h2{
+            @include titulos($colorPrincipal, 100px, 1);
+        }
     }
     .box1-contact {
         grid-area: a1;

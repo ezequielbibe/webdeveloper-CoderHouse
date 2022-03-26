@@ -1,0 +1,151 @@
+@media screen and (max-width: 450px) {
+    /* HOME */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .header-nav {
+        width: 100%;
+        text-align: center;
+    }
+    .boton {
+        margin-bottom: 10px;
+    }
+    .main-content {
+        height: 2800px;
+        grid-template-columns: 90%;
+        grid-template-rows: 900px 230px 750px 400px 400px;
+        grid-template-areas: "a1" 
+                             "a2"
+                             "a3" 
+                             "a4" 
+                             "a5";
+    }
+    .footer {
+        flex-direction: column;
+        padding: 30px 10px;
+        margin-top: 20px;
+    }
+
+    /* 9z Team */
+
+    .main-content-9z {
+        height: 7500px;
+        grid-template-columns: 90%;
+        grid-template-rows: 200px 300px 800px 200px 220px 250px 900px 670px 400px 1450px 400px 950px 450px;
+        grid-template-areas: "titulo" 
+                             "a2" 
+                             "a1"
+                             "banner" 
+                             "titulo2"
+                             "a3" 
+                             "a4"
+                             "a5"
+                             "a6"
+                             "a7"
+                             "a8"
+                             "a9"
+                             "a10";
+    }
+
+    /* KRU Esports */
+
+    .main-content-kru {
+        height: 10500px;
+        grid-template-columns: 90%;
+        grid-template-rows: 250px 750px 200px 50px 200px 450px 400px 400px 760px 400px 650px 550px 200px 700px 400px 650px 400px 350px 850px 800px 200px 450px;
+        grid-template-areas: "titulo"
+                             "a1"
+                             "a2"
+                             "espacio"
+                             "banner"
+                             "titulo2"
+                             "a3"
+                             "a4"
+                             "a5"
+                             "a6"
+                             "a7"
+                             "a8"
+                             "a9"
+                             "a10"
+                             "a11"
+                             "a12"
+                             "a13"
+                             "a14"
+                             "a15"
+                             "a16"
+                             "a17"
+                             "a18";
+    }
+
+    /* GALERIA */
+
+    .main-content-galeria {
+        height: 7500px;
+        grid-template-columns: 90%;
+        grid-template-rows: 220px 80px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 80px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+        grid-template-areas: 
+                             "galeria"
+                             "tituloG"
+                             "a1"
+                             "a2"
+                             "a3"
+                             "a4"
+                             "a5"
+                             "a6"
+                             "a7"
+                             "a8"
+                             "a9"
+                             "a10"
+                             "a11"
+                             "tituloG2"
+                             "a12"
+                             "a13"
+                             "a14"
+                             "a15"
+                             "a16"
+                             "a17"
+                             "a18"
+                             "a19"
+                             "a20"
+                             "a21"
+                             "a22"
+                             "a23"
+                             "a24"
+                             "a25"
+                             "a26"
+                             "a27"
+                             "a28"
+                             "a29";
+        
+        img:hover {
+            transform: none;
+            transition: none;
+        }
+        .galeria {
+            h2{
+                font-size: 70px;
+            }
+        }
+    }
+
+    /* Contacto */ 
+
+    .main-content-contact {
+
+        grid-template-columns: 100%;
+        grid-template-rows: 150px 500px;
+        grid-template-areas: "titulo"
+                             "a2";
+
+        .box1-contact {
+            display: none;
+        }
+        .titulo-contact {
+            h2{
+                font-size: 70px;    
+            } 
+        }
+    }
+}
