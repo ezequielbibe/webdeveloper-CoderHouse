@@ -2,7 +2,7 @@
     display: grid;
     height: 3200px;
     grid-template-columns: 45% 45%;
-    grid-template-rows: 100px 400px 50px 400px 100px 500px 400px 400px 500px 150px;
+    grid-template-rows: 100px 430px 50px 400px 100px 500px 400px 400px 500px 150px;
     grid-template-areas: "titulo titulo" 
                          "a1 a2"
                          "espacio espacio"
@@ -27,6 +27,7 @@
     }
     .box-frank {
         grid-area: a2;
+        height: 100%;
     }
     .box-banner-9z {
         grid-area: banner;
@@ -37,6 +38,7 @@
     }
     .foto1-9z {
         grid-area: a3;
+        height: 100%;
     }
     .p1-9z {
         grid-area: a4;
