@@ -117,7 +117,8 @@ p {
   padding: 5px 0px;
   border-top: 2px solid #770aa1;
   background-color: #31333b;
-  color: #acacac; }
+  color: #acacac;
+  text-align: center; }
   .footer p {
     display: block;
     margin-block-start: 1em;
@@ -349,7 +350,8 @@ p {
       font-family: 'Rowdies', cursive;
       text-shadow: 2px 2px 2px #acacac; }
   .main-content-contact .box1-contact {
-    grid-area: a1; }
+    grid-area: a1;
+    height: 100%; }
   .main-content-contact .box-form {
     grid-area: a2;
     width: 70%; }
